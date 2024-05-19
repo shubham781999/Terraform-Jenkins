@@ -1,12 +1,12 @@
 provider "aws" {
-   region     = "us-east-1"
+   region     = "ap-south-1"
 }
 
 
 resource "aws_instance" "ec2_example" {
 
-   ami           = "ami-05fa00d4c63e32376"
-   subnet_id     = "subnet-0a70a567c36632424"
+   ami           = "ami-007020fd9c84e18c7"
+   subnet_id     = "subnet-0877e268bff11bb3a"
    key_name      = "keypair"
    instance_type =  "t2.micro"
    count = 1
